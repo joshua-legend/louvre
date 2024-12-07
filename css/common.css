@@ -1,0 +1,42 @@
+/* Bold */
+@font-face {
+  font-family: "Hana2";
+  src: url("../fonts/Hana2-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Heavy */
+@font-face {
+  font-family: "Hana2";
+  src: url("../fonts/Hana2-Heavy.ttf") format("truetype");
+  font-weight: 900; /* Heavy는 보통 더 높은 weight를 사용 */
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: "Hana2";
+  src: url("../fonts/Hana2-Light.ttf") format("truetype");
+  font-weight: 300; /* Light는 가벼운 weight */
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Hana2";
+  src: url("../fonts/Hana2-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium은 중간 weight */
+  font-style: normal;
+}
+
+* {
+  font-family: "Hana2";
+  src: url("../fonts/Hana2-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium은 중간 weight */
+  font-style: normal;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,80 @@
+.curation {
+  padding: 100px;
+  background-color: #000;
+}
+.curation__title {
+  font-size: 60px;
+  color: white;
+  padding-bottom: 50px;
+  border-bottom: 2px solid white;
+}
+
+.curation__artBox {
+  width: 100%;
+  display: flex;
+}
+.curation__artBox__left {
+  flex: 1;
+  padding-top: 80px;
+  padding-right: 80px;
+}
+
+.curation__artBox__left > img {
+  width: 100%;
+  filter: brightness(0.8);
+}
+.curation__artBox__right {
+  flex: 1;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.curation__artBox__right > .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curation__artBox__right > .part {
+  width: 85%;
+  height: 500px;
+}
+
+.curation__artBox__right > .part > img {
+  object-fit: cover;
+  filter: brightness(0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.curation__artBox__right > .info > .title {
+  font-size: 30px;
+  color: white;
+}
+.curation__artBox__right > .info > .desc {
+  font-size: 20px;
+  color: white;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+.curation__artBox__right > .info > .button {
+  width: fit-content;
+  color: white;
+  border: 2px solid white;
+  margin-left: auto;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 20px 45px;
+  transition: all 0.5s ease-out;
+}
+
+.curation__artBox__right > .info > .button:hover {
+  background-color: white;
+  color: black;
+}
+.curation__artBox__right > .info > .button > p {
+  transform: translateX(-20px);
+  opacity: 0.4;
+}

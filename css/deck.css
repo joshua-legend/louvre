@@ -1,0 +1,41 @@
+.deck {
+  height: 100vh;
+  background-color: skyblue;
+  position: relative;
+  overflow: hidden; /* 애니메이션이 화면 밖으로 나가지 않도록 */
+}
+
+.deck > article {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 0 0 50px;
+  position: absolute;
+  top: 0;
+  transform: translateX(100%);
+  z-index: 1;
+}
+.deck > .first__card:nth-child(1) {
+  background-color: #eb8e90;
+  z-index: 1;
+  left: 5%;
+}
+.deck > .second__card:nth-child(2) {
+  background-color: #5eb1ef;
+  z-index: 2;
+  left: 10%;
+}
+.deck > .third__card:nth-child(3) {
+  background-color: #56ba9f;
+  z-index: 3;
+  left: 15%;
+}
+.deck > .fourth__card:nth-child(4) {
+  background-color: #ffced6;
+  z-index: 4;
+  left: 20%;
+}
+.deck > .fifth__card:nth-child(5) {
+  background-color: #cbcdff;
+  z-index: 5;
+  left: 25%;
+}
