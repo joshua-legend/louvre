@@ -8,6 +8,7 @@ const cardTimeLine = gsap.timeline({
     scrub: 2, // 스크롤과의 싱크를 느리게 설정
     start: "top top",
     end: "+=5000",
+    // test
   },
 });
 
