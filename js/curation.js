@@ -1,6 +1,6 @@
 const animationSettings = {
   x: 0,
-  duration: 1.5,
+  duration: 2,
   opacity: 1,
   ease: "power4.inOut",
 };
