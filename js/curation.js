@@ -1,20 +1,22 @@
-const animationSettings = {
-  x: 0,
-  duration: 2,
-  opacity: 1,
-  ease: "power4.inOut",
-};
-
-const scrollTriggerSettings = {
-  trigger: ".info",
-  toggleActions: "restart none none none",
-};
+import { animation } from "./library/animation.js";
+import { createTimeline } from "./library/helper.js";
 
 export const createCurationAnimation = () => {
-  const timeline = gsap
-    .timeline({
-      scrollTrigger: scrollTriggerSettings,
-    })
-    .to(".curation__artBox__right > .info > .button > p", animationSettings);
-  return timeline;
+  const scrollTrigger = {
+    trigger: ".info",
+    toggleActions: "restart none none none",
+  };
+
+  const targets = [
+    {
+      selector: ".curation__artBox__right > .info > .button > p",
+      animations: [
+        { settings: animation.fadeIn, position: "+=0.5" },
+        { settings: animation.slideToX },
+        { settings: animation.defaultSettings },
+      ],
+    },
+  ];
+
+  return createTimeline(scrollTrigger, targets);
 };

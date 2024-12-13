@@ -3,6 +3,7 @@
   background-color: skyblue;
   position: relative;
   overflow: hidden; /* 애니메이션이 화면 밖으로 나가지 않도록 */
+  scroll-behavior: smooth;
 }
 
 .deck > article {
@@ -113,24 +114,41 @@
   background-color: #d9ddd5;
   z-index: 2;
   left: 5%;
+  color: #7d7d78;
 }
 .deck > .second__card {
   background-color: #b6b79f;
   z-index: 3;
   left: 10%;
+  color: #3e3e3a;
 }
 .deck > .third__card {
   background-color: #6b6b63;
   z-index: 4;
   left: 15%;
+  color: #e3e4d1;
 }
 .deck > .fourth__card {
   background-color: #443e40;
   z-index: 5;
   left: 20%;
+  color: #b6b79f;
 }
 .deck > .fifth__card {
   background-color: #2e2c2c;
   z-index: 6;
   left: 25%;
+  color: #b7b5b3;
+}
+
+.loader {
+  width: 50px;
+  border-bottom: 5px solid black;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.fifth__loader {
+  border-bottom: 5px solid #b7b5b3;
 }

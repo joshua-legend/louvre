@@ -1,3 +1,5 @@
+export const mixObj = (animation) => Object.assign({}, ...Object.values(animation));
+
 export const generatePosition = (factor, isPos, clientX, clientY) => {
   const sign = isPos ? 1 : -1;
   const x = (clientX - window.innerWidth / 2) * factor * sign;

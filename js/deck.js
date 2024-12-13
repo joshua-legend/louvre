@@ -1,20 +1,58 @@
-gsap.registerPlugin(ScrollTrigger);
+// animations/deckAnimation.js
+import { animation } from "./library/animation.js";
+import { createTimeline } from "./library/helper.js";
 
-const cardTimeLine = gsap.timeline({
-  scrollTrigger: {
+export const createDeckAnimation = () => {
+  const scrollTriggerConfig = {
     trigger: ".deck",
     pin: true,
-    markers: true,
-    scrub: 2, // 스크롤과의 싱크를 느리게 설정
+    scrub: 2,
     start: "top top",
     end: "+=5000",
-    // test
-  },
-});
+  };
 
-cardTimeLine
-  .to(".first__card", { x: 0, duration: 1.5 }, "0")
-  .to(".second__card", { x: 0, duration: 1.5 }, "+=0.5")
-  .to(".third__card", { x: 0, duration: 1.5 }, "+=0.5")
-  .to(".fourth__card", { x: 0, duration: 1.5 }, "+=0.5")
-  .to(".fifth__card", { x: 0, duration: 1.5 }, "+=0.5");
+  const targets = [
+    {
+      selector: ".first__card",
+      animations: [{ settings: animation.slideToX, position: "+=0.5" }],
+    },
+    {
+      selector: ".first__loader",
+      animations: [{ settings: animation.load }],
+    },
+    {
+      selector: ".second__card",
+      animations: [{ settings: animation.slideToX, position: "+=0.5" }],
+    },
+    {
+      selector: ".second__loader",
+      animations: [{ settings: animation.load }],
+    },
+    {
+      selector: ".third__card",
+      animations: [{ settings: animation.slideToX, position: "+=0.5" }],
+    },
+    {
+      selector: ".third__loader",
+      animations: [{ settings: animation.load }],
+    },
+    {
+      selector: ".fourth__card",
+      animations: [{ settings: animation.slideToX, position: "+=0.5" }],
+    },
+    {
+      selector: ".fourth__loader",
+      animations: [{ settings: animation.load }],
+    },
+    {
+      selector: ".fifth__card",
+      animations: [{ settings: animation.slideToX, position: "+=0.5" }],
+    },
+    {
+      selector: ".fifth__loader",
+      animations: [{ settings: animation.load }],
+    },
+  ];
+
+  return createTimeline(scrollTriggerConfig, targets);
+};

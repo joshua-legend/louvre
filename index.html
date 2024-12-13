@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/exhibition.css" />
     <link rel="stylesheet" href="css/curation.css" />
     <link rel="stylesheet" href="css/deck.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/twist.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
-
     <script type="module" src="js/main.js" defer></script>
-    <script src="js/deck.js" defer></script>
   </head>
   <body>
     <header></header>
@@ -28,41 +27,13 @@
           <h1>Joshua's exhibition</h1>
         </div>
         <div class="exhibition__imageBoard">
-          <img
-            class="image__positive__slow"
-            src="images/exhibition/exhibition_1.jpg"
-            alt=""
-          />
-          <img
-            class="image__negative__moderate"
-            src="images/exhibition/exhibition_2.jpg"
-            alt=""
-          />
-          <img
-            class="image__positive__moderate"
-            src="images/exhibition/exhibition_3.jpg"
-            alt=""
-          />
-          <img
-            class="image__positive__moderate"
-            src="images/exhibition/exhibition_4.jpg"
-            alt=""
-          />
-          <img
-            class="image__positive__moderate"
-            src="images/exhibition/exhibition_5.jpg"
-            alt=""
-          />
-          <img
-            class="image__negative__moderate"
-            src="images/exhibition/exhibition_6.jpg"
-            alt=""
-          />
-          <img
-            class="image__positive__slow"
-            src="images/exhibition/exhibition_7.jpg"
-            alt=""
-          />
+          <img class="image__positive__slow" src="images/exhibition/exhibition_1.jpg" alt="" />
+          <img class="image__negative__moderate" src="images/exhibition/exhibition_2.jpg" alt="" />
+          <img class="image__positive__moderate" src="images/exhibition/exhibition_3.jpg" alt="" />
+          <img class="image__positive__moderate" src="images/exhibition/exhibition_4.jpg" alt="" />
+          <img class="image__positive__moderate" src="images/exhibition/exhibition_5.jpg" alt="" />
+          <img class="image__negative__moderate" src="images/exhibition/exhibition_6.jpg" alt="" />
+          <img class="image__positive__slow" src="images/exhibition/exhibition_7.jpg" alt="" />
         </div>
       </section>
       <section class="curation">
@@ -78,17 +49,13 @@
             <div class="info">
               <h5 class="title">Monna Lisa</h5>
               <p class="desc">
-                C’est le portrait le plus célèbre du monde, celui de Monna Lisa,
-                l’épouse du marchand d’étoffes florentin, Francesco del
-                Giocondo, surnommée la « Gioconda » francisé La Joconde. Peinte
-                devant un paysage lointain, la Joconde nous regarde, son
-                légendaire sourire aux lèvres. Mais outre son expression, c’est
-                la technique du sfumato qui lui confère cette présence si
-                particulière : Léonard de Vinci a superposé de fines couches de
-                peintures jusqu’à créer des formes tout en atténuant les
-                contours et les contrastes. L’artiste saisit l’instant où Monna
-                Lisa se tourne vers le spectateur. C’est ce mouvement si naturel
-                qui donne une impression de vie au tableau.
+                C’est le portrait le plus célèbre du monde, celui de Monna Lisa, l’épouse du marchand d’étoffes
+                florentin, Francesco del Giocondo, surnommée la « Gioconda » francisé La Joconde. Peinte devant un
+                paysage lointain, la Joconde nous regarde, son légendaire sourire aux lèvres. Mais outre son expression,
+                c’est la technique du sfumato qui lui confère cette présence si particulière : Léonard de Vinci a
+                superposé de fines couches de peintures jusqu’à créer des formes tout en atténuant les contours et les
+                contrastes. L’artiste saisit l’instant où Monna Lisa se tourne vers le spectateur. C’est ce mouvement si
+                naturel qui donne une impression de vie au tableau.
               </p>
               <div class="button"><p>test4qw56e46</p></div>
             </div>
@@ -104,41 +71,32 @@
             <div class="card__desc">
               <h4>The Noble Doge of the Medieval Court</h4>
               <p>
-                In a whimsical fusion of eras, a dapper dog clad in the ornate
-                garments of a medieval count stands poised in a grand castle
-                hall. The doge, a Shiba Inu with a noble air, sports a richly
-                embroidered tunic and a velvet cape draped elegantly over his
-                shoulders. The ensemble is completed with a glistening golden
-                chain and a jeweled collar, symbolizing his esteemed rank.
-                Around him, the stonework and ancient tapestries of the castle
-                add to the regal atmosphere, while soft sunlight filters through
-                large, stained glass windows, casting colorful patterns on the
-                polished floor. This portrait captures the amusing yet dignified
-                persona of the doge, blending historical grandeur with a touch
-                of modern meme culture.
+                In a whimsical fusion of eras, a dapper dog clad in the ornate garments of a medieval count stands
+                poised in a grand castle hall. The doge, a Shiba Inu with a noble air, sports a richly embroidered tunic
+                and a velvet cape draped elegantly over his shoulders. The ensemble is completed with a glistening
+                golden chain and a jeweled collar, symbolizing his esteemed rank. Around him, the stonework and ancient
+                tapestries of the castle add to the regal atmosphere, while soft sunlight filters through large, stained
+                glass windows, casting colorful patterns on the polished floor. This portrait captures the amusing yet
+                dignified persona of the doge, blending historical grandeur with a touch of modern meme culture.
               </p>
             </div>
           </div>
         </article>
         <article class="first__card">
           <div class="card__second__container">
+            <div class="first__loader loader"></div>
             <h4>The Might of Doge: Strength Unleashed</h4>
             <div class="bottom">
               <div class="card__desc">
                 <p>
-                  In this image, the powerful essence of 'Strong Doge' is fully
-                  captured as he stands robust and imposing. His muscles are
-                  well-defined, emphasizing his sheer strength and
-                  determination.
+                  In this image, the powerful essence of 'Strong Doge' is fully captured as he stands robust and
+                  imposing. His muscles are well-defined, emphasizing his sheer strength and determination.
                 </p>
                 <p>
-                  The background is dynamic, with visual elements that suggest
-                  movement and energy, perhaps a stormy sky or a blurred
-                  landscape, enhancing the sense of power. His expression is
-                  fierce and confident, commanding respect. This representation
-                  of Doge not only embodies physical strength but also an
-                  indomitable spirit, making it a striking depiction of the
-                  popular meme.
+                  The background is dynamic, with visual elements that suggest movement and energy, perhaps a stormy sky
+                  or a blurred landscape, enhancing the sense of power. His expression is fierce and confident,
+                  commanding respect. This representation of Doge not only embodies physical strength but also an
+                  indomitable spirit, making it a striking depiction of the popular meme.
                 </p>
               </div>
               <div class="card__photo">
@@ -149,22 +107,19 @@
         </article>
         <article class="second__card">
           <div class="card__second__container">
+            <div class="second__loader loader"></div>
             <h4>The Gentle Side of Doge: Meekness</h4>
             <div class="bottom">
               <div class="card__desc">
                 <p>
-                  In this portrayal, 'Weak Doge' is depicted with a softer, more
-                  submissive demeanor. Unlike his strong counterpart, this Doge
-                  appears more vulnerable and less confident. His posture is
-                  less imposing, maybe slightly slouched, reflecting a sense of
-                  gentleness or hesitation.
+                  In this portrayal, 'Weak Doge' is depicted with a softer, more submissive demeanor. Unlike his strong
+                  counterpart, this Doge appears more vulnerable and less confident. His posture is less imposing, maybe
+                  slightly slouched, reflecting a sense of gentleness or hesitation.
                 </p>
                 <p>
-                  The background might feature calm, subdued colors like pastel
-                  shades, creating a tranquil atmosphere. His expression is
-                  tender, almost endearing, which contrasts significantly with
-                  the powerful image of the strong Doge. This image captures the
-                  nuanced character of Doge, showing a different aspect of
+                  The background might feature calm, subdued colors like pastel shades, creating a tranquil atmosphere.
+                  His expression is tender, almost endearing, which contrasts significantly with the powerful image of
+                  the strong Doge. This image captures the nuanced character of Doge, showing a different aspect of
                   strength - that of quiet resilience and emotional depth.
                 </p>
               </div>
@@ -176,21 +131,19 @@
         </article>
         <article class="third__card">
           <div class="card__second__container">
+            <div class="third__loader loader"></div>
             <h4>Monk Pepe with a Chalice of Wine</h4>
             <div class="bottom">
               <div class="card__desc">
                 <p>
-                  This artistic rendering depicts Pepe the Frog dressed as a
-                  medieval monk, embracing a serene moment in the monastery's
-                  vineyard. He holds a chalice of wine, symbolizing both the
-                  spiritual and earthly pleasures.
+                  This artistic rendering depicts Pepe the Frog dressed as a medieval monk, embracing a serene moment in
+                  the monastery's vineyard. He holds a chalice of wine, symbolizing both the spiritual and earthly
+                  pleasures.
                 </p>
                 <p>
-                  His monk's robe is simple yet dignified, and the setting
-                  around him is filled with lush greenery and ancient stone
-                  walls, hinting at a secluded abbey. The image portrays Pepe
-                  with a slight smile, suggesting a peaceful contentment with
-                  his monastic life, blending historical elements with the
+                  His monk's robe is simple yet dignified, and the setting around him is filled with lush greenery and
+                  ancient stone walls, hinting at a secluded abbey. The image portrays Pepe with a slight smile,
+                  suggesting a peaceful contentment with his monastic life, blending historical elements with the
                   whimsical character of the meme.
                 </p>
               </div>
@@ -202,21 +155,20 @@
         </article>
         <article class="fourth__card">
           <div class="card__second__container">
+            <div class="fourth__loader loader"></div>
+
             <h4>Elon Musk and Doge: Partners in Crypto</h4>
             <div class="bottom">
               <div class="card__desc">
                 <p>
-                  In this imaginative composition, Elon Musk and the Doge meme
-                  character are depicted embracing as allies in the world of
-                  cryptocurrency. Behind them, a giant Bitcoin symbol serves as
-                  a backdrop, symbolizing their connection to the digital
-                  currency revolution.
+                  In this imaginative composition, Elon Musk and the Doge meme character are depicted embracing as
+                  allies in the world of cryptocurrency. Behind them, a giant Bitcoin symbol serves as a backdrop,
+                  symbolizing their connection to the digital currency revolution.
                 </p>
                 <p>
-                  Both figures are portrayed with expressions of camaraderie and
-                  forward-thinking enthusiasm. The scene captures a moment of
-                  unity between technology and meme culture, highlighting their
-                  influential roles in the modern tech landscape.
+                  Both figures are portrayed with expressions of camaraderie and forward-thinking enthusiasm. The scene
+                  captures a moment of unity between technology and meme culture, highlighting their influential roles
+                  in the modern tech landscape.
                 </p>
               </div>
               <div class="card__photo">
@@ -227,22 +179,19 @@
         </article>
         <article class="fifth__card">
           <div class="card__second__container">
+            <div class="fifth__loader loader"></div>
             <h4>Doge Astronaut on Mars</h4>
             <div class="bottom">
               <div class="card__desc">
                 <p>
-                  Doge, the beloved internet meme, is transformed into an
-                  astronaut planting a flag on Mars in this adventurous
-                  illustration. Clad in a space suit designed for the Martian
-                  environment, Doge's expression mixes determination with his
-                  characteristic humor.
+                  Doge, the beloved internet meme, is transformed into an astronaut planting a flag on Mars in this
+                  adventurous illustration. Clad in a space suit designed for the Martian environment, Doge's expression
+                  mixes determination with his characteristic humor.
                 </p>
                 <p>
-                  The barren, red landscape of Mars stretches out behind him,
-                  with distant hills and a thin atmosphere visible. This image
-                  not only taps into the playful spirit of the Doge meme but
-                  also celebrates human aspirations for space exploration,
-                  albeit through a humorous lens.
+                  The barren, red landscape of Mars stretches out behind him, with distant hills and a thin atmosphere
+                  visible. This image not only taps into the playful spirit of the Doge meme but also celebrates human
+                  aspirations for space exploration, albeit through a humorous lens.
                 </p>
               </div>
               <div class="card__photo">
@@ -251,6 +200,34 @@
             </div>
           </div>
         </article>
+      </section>
+      <section class="gallery">
+        <div class="gallery__hero">
+          <h2 class="gallery__hero--title">Je t'avais dit qu'il irait sur Mars.</h2>
+          <p class="gallery__hero--paragraph">
+            Le parcours de Dodge a commencé par une vague idée: "Pourquoi mon chien ne peut-il pas aller sur Mars ?"
+            alors que son propriétaire traînait sur le canapé et regardait un documentaire sur l'exploration de
+            l'espace. La question ne s'est pas terminée par une plaisanterie, et un certain Dudge s'est retrouvé
+            véritablement surpris dans une fusée en direction de Mars. Partout dans le monde, des fans de Dodge ont
+            applaudi et observé en direct le voyage spatial de ce petit chien mignon.
+          </p>
+        </div>
+        <div class="gallery__photo">
+          <img id="gallery__zero" src="images/gallery/doge0.webp" alt="" />
+          <img id="gallery__first" src="images/gallery/doge1.webp" alt="" />
+          <img id="gallery__second" src="images/gallery/doge2.webp" alt="" />
+          <img id="gallery__third" src="images/gallery/doge3.webp" alt="" />
+          <img id="gallery__fourth" src="images/gallery/doge4.webp" alt="" />
+        </div>
+      </section>
+      <section class="twist">
+        <h1 class="twist__text">Dodge et Pepe achètent des bitcoins</h1>
+        <div class="twist__card__zone">
+          <div id="card1" class="twist__card"></div>
+          <div id="card2" class="twist__card"></div>
+          <div id="card3" class="twist__card"></div>
+          <div id="card4" class="twist__card"></div>
+        </div>
       </section>
     </main>
   </body>
